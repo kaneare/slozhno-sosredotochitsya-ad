@@ -1,4 +1,5 @@
 .page {
+  min-height: 100vh;
   background-color: var(--page-background-color);
   background-image: var(--page-background-image);
   background-position: center;
@@ -11,10 +12,10 @@
 
 .header {
   min-height: 100vh;
+  padding: 20px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 20px;
 }
 
 .header__theme-menu {
@@ -28,13 +29,13 @@
 }
 
 .header__theme-menu-button {
+  min-height: 26px;
+  padding: 0 13px;
+  border: 0;
   background: transparent;
-  border: none;
   color: var(--button-color);
   text-transform: lowercase;
   cursor: pointer;
-  padding: 0 13px;
-  min-height: 26px;
 }
 
 .header__theme-menu-button:hover {
@@ -59,8 +60,8 @@
 
 .footer {
   min-height: 100vh;
-  position: relative;
   padding: 20px;
+  position: relative;
 }
 
 .decorated-zone {
@@ -73,8 +74,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-color: var(--decorative-color);
   border-style: solid;
+  border-color: var(--decorative-color);
 }
 
 .decorated-zone::before {
@@ -93,10 +94,6 @@
   .content {
     gap: 80px;
     padding: 0 20px 20px;
-  }
-
-  .header__theme-menu-list {
-    gap: 10px;
   }
 }
 
