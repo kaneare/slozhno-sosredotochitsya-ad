@@ -1,15 +1,33 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-light {
-  --page-background-image: url(../images/cover-image-light.png);
-  --page-background-color: #fff1f7;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --accent-color: #353430;
-  --accent-text-color: #fff1f7;
+  --main-text-color: #353430;
+  --bg-color: #fff1f7;
   --button-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.4);
-  --decorative-color: #353430;
+  --button-hover-border: #32312d66;
+  --section-header-color: #353430;
+  --article-header-color: #353430;
+  --main-header-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --bg-image: url("../images/cover-image-light.png");
+  --rec-type: none;
 }
 
-.theme-light .page {
-  background-color: var(--page-background-color);
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text-color: #353430;
+    --bg-color: #fff1f7;
+    --button-color: #353430;
+    --button-hover-border: #32312d66;
+    --section-header-color: #353430;
+    --article-header-color: #353430;
+    --main-header-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --bg-image: url("../images/cover-image-light.png");
+    --rec-type: none;
+  }
 }
