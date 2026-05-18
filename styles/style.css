@@ -1,5 +1,70 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--page-background-color);
+  background-image: var(--page-background-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-color);
+}
+
+.header {
+  min-height: 100vh;
+}
+
+.content {
+  display: grid;
+}
+
+.section {
+  display: block;
+}
+
+.footer {
+  min-height: 100vh;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  border: none;
+  color: var(--button-color);
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button_active,
+.header__theme-menu-button:disabled {
+  outline: 1px solid var(--button-color);
+  pointer-events: none;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-color: var(--decorative-color);
+  border-style: solid;
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0;
+}
+
+.decorated-zone::after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px;
 }
