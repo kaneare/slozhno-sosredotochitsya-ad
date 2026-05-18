@@ -1,15 +1,33 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-dark {
-  --page-background-image: url(../images/cover-image.png);
-  --page-background-color: #000028;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --accent-text-color: #000028;
+  --main-text-color: #f1b2ce;
+  --bg-color: #000028;
+  --main-header-color: #db00ff;
+  --button-hover-border: #ff007066;
+  --article-header-color: #000028;
   --button-color: #ff0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
-  --decorative-color: #ff0070;
+  --section-header-color: #ff0070;
+  --accent-color: #ff0070;
+  --bg-image: url("../images/cover-image-dark.png");
+  --rec-type: block;
 }
 
-.theme-dark .page {
-  background-color: var(--page-background-color);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-color: #f1b2ce;
+    --bg-color: #000028;
+    --main-header-color: #db00ff;
+    --button-hover-border: #ff007066;
+    --article-header-color: #000028;
+    --button-color: #ff0070;
+    --section-header-color: #ff0070;
+    --accent-color: #ff0070;
+    --bg-image: url("../images/cover-image-dark.png");
+    --rec-type: block;
+  }
 }
