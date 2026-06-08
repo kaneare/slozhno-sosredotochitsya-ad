@@ -1,1 +1,1 @@
-https://github.com/kaneare/slozhno-sosredotochitsya-ad
+https://kaneare.github.io/slozhno-sosredotochitsya-ad/
